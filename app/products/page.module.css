@@ -1,0 +1,136 @@
+.pageWrapper {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: var(--color-beige-50);
+}
+
+.headerArea {
+  background-color: var(--color-forest-950);
+  color: var(--color-white);
+  padding: 6rem 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-gold-500);
+}
+
+.pageSubtitle {
+  font-size: 1.1rem;
+  color: var(--color-beige-200);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.catalogContainer {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.categoryRow {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(11, 27, 46, 0.05);
+  border: 1px solid rgba(11, 43, 27, 0.05);
+}
+
+@media (min-width: 768px) {
+  .categoryRow {
+    flex-direction: row;
+    height: 400px;
+  }
+  
+  .rowReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.imageCol {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .imageCol {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.fallbackIcon {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.contentCol {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contentCol {
+    width: 50%;
+    padding: 4rem;
+  }
+}
+
+.catTitle {
+  font-size: 2rem;
+  color: var(--color-forest-900);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.catTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-gold-500);
+}
+
+.catDesc {
+  color: var(--color-forest-700);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.exploreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-forest-900);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.exploreBtn:hover {
+  color: var(--color-gold-500);
+  gap: 12px;
+}

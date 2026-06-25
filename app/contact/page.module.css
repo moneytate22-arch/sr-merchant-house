@@ -1,0 +1,226 @@
+.pageWrapper {
+  padding-top: 80px;
+  background-color: var(--color-beige-50);
+  min-height: 100vh;
+}
+
+.headerArea {
+  background-color: var(--color-forest-950);
+  color: var(--color-white);
+  padding: 6rem 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-gold-500);
+}
+
+.pageSubtitle {
+  font-size: 1.1rem;
+  color: var(--color-beige-200);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+/* Form Styles */
+.formCol {
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(11, 43, 27, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.formHeader {
+  margin-bottom: 2.5rem;
+}
+
+.formHeader h2 {
+  font-size: 2rem;
+  color: var(--color-forest-900);
+  margin-bottom: 0.5rem;
+}
+
+.formHeader p {
+  color: var(--color-forest-700);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-forest-900);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-beige-200);
+  background-color: var(--color-beige-50);
+  color: var(--color-forest-900);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: var(--color-gold-500);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  background-color: var(--color-white);
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-forest-900);
+  color: var(--color-white);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background-color: var(--color-gold-500);
+  color: var(--color-forest-950);
+  transform: translateY(-2px);
+}
+
+/* Details Styles */
+.detailsCard {
+  background-color: var(--color-beige-100);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 43, 27, 0.05);
+  height: 100%;
+}
+
+.detailsTitle {
+  font-size: 1.5rem;
+  color: var(--color-forest-900);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.detailsTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-gold-500);
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contactItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-500);
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contactItem h4 {
+  font-size: 1.1rem;
+  color: var(--color-forest-900);
+  margin-bottom: 0.25rem;
+}
+
+.contactItem a,
+.contactItem p {
+  color: var(--color-forest-700);
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: var(--color-gold-500);
+}
+
+.mapBox {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(11, 43, 27, 0.1);
+}
+
+.mapPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(11, 43, 27, 0.05);
+  color: var(--color-forest-700);
+  font-weight: 600;
+}
